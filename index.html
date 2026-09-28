@@ -128,6 +128,14 @@ h1{max-width:none}
 .pm .pmb .pd{padding:0;max-width:none}
 @media (max-width:980px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{gap:36px}}
 @media (max-width:760px){.cards details.wide{grid-column:auto}.cards details.wide .thumb{aspect-ratio:16/10}.wrap{padding:28px 20px 48px}.hero{grid-template-columns:1fr;margin-bottom:56px}.cards{grid-template-columns:1fr}.cols{grid-template-columns:1fr;gap:8px}.pm .pmh,.pm .pmb{padding-left:18px;padding-right:18px}}
+
+.logos{margin:-24px 0 72px}
+.logos .lab{font-size:14px;color:var(--muted);margin-bottom:16px}
+.lrow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px 52px;padding:22px 28px;background:rgba(255,255,255,.6);border:1px solid rgba(23,34,43,.07);border-radius:18px}
+.lrow img{height:52px;width:auto;max-width:150px;object-fit:contain}
+.tlw{display:flex;gap:14px;align-items:flex-start}
+.tlogo{width:34px;height:34px;object-fit:contain;flex:none;margin-top:2px;background:#fff;border-radius:8px;padding:3px;border:1px solid rgba(23,34,43,.07)}
+@media (max-width:760px){.lrow{gap:20px 30px;padding:18px}.lrow img{height:34px}}
 </style>
 </head>
 <body>
@@ -147,12 +155,10 @@ h1{max-width:none}
 <h1 lang="fr">Des années de croissance B2B et B2C, désormais portée par l'IA.</h1>
 <h1 lang="en">Years of B2B and B2C growth, now powered by AI.</h1>
 
-<p class="role" lang="fr">Growth &amp; GTM Strategy Intern chez ToumAI, jusqu'au 30 septembre 2026</p>
-<p class="role" lang="en">Growth &amp; GTM Strategy Intern at ToumAI, until 30 September 2026</p>
 
-<p class="intro" lang="fr">Développement commercial en Australie, au Royaume-Uni, aux États-Unis et en Europe, puis un MSc Digital Marketing Management à Rennes School of Business. Aujourd'hui, je construis des campagnes et des automatisations d'acquisition pour une startup d'IA vocale.</p>
-<p class="intro" lang="en">Business development across Australia, the UK, the US and Europe, then an MSc in Digital Marketing Management at Rennes School of Business. Today I build acquisition campaigns and automations for a voice AI startup.</p>
 
+<p class="intro" lang="fr">Outbound, campagnes et automatisation IA, de Sydney à Casablanca. Je juge mon travail aux rendez-vous obtenus, pas aux impressions.</p>
+<p class="intro" lang="en">Outbound, campaigns and AI automation, from Sydney to Casablanca. I judge my work by meetings booked, not impressions.</p>
 <span class="avail" lang="fr">Disponible immédiatement. Basé à Paris, ouvert à la relocalisation.</span>
 <span class="avail" lang="en">Available immediately. Based in Paris, open to relocation.</span>
 <div class="btns herobtns"><a class="btn main" href="PS_CV_Public.pdf" download><span lang="fr">Télécharger mon CV (EN)</span><span lang="en">Download my CV</span></a><a class="btn" href="https://www.linkedin.com/in/prashantvsaini/" target="_blank" rel="noopener">LinkedIn</a></div>
@@ -166,12 +172,13 @@ h1{max-width:none}
 
 
 
+<section class="logos" aria-label="Where I have worked"><p class="lab"><span lang="fr">Là où j'ai travaillé</span><span lang="en">Where I've worked</span></p><div class="lrow"><img src="logo-toumai.png" alt="ToumAI" title="ToumAI"><img src="logo-pacific.png" alt="Pacific Group of Companies" title="Pacific Group of Companies"><img src="logo-befree.png" alt="BeFree" title="BeFree"><img src="logo-datamatics.png" alt="Datamatics" title="Datamatics"><img src="logo-furtados-high.png" alt="Furtados High Music" title="Furtados High Music"><img src="logo-silgate.png" alt="Silgate Solutions" title="Silgate Solutions"></div></section>
 <section aria-labelledby="proj">
 <h2 id="proj"><span lang="fr">Projets</span><span lang="en">Work</span></h2>
 <div class="cards">
 
 <details class="wide">
-<summary><img class="thumb" src="toumai-salesnav.webp" alt="" loading="lazy"><span class="pt" lang="fr">Growth &amp; GTM dans une startup d'IA vocale</span><span class="pt" lang="en">Growth &amp; GTM at a voice AI startup</span><span class="pr" lang="fr">Campagnes automatisées, reporting et génération de leads en Europe, au Maghreb et en Afrique</span><span class="pr" lang="en">Automated campaigns, reporting and lead generation across Europe, North Africa and Africa</span><span class="more"><span lang="fr">Voir le projet</span><span lang="en">View project</span> <span aria-hidden="true">&rarr;</span></span></summary>
+<summary><picture><source media="(max-width:760px)" srcset="toumai-card.webp"><img class="thumb" src="toumai-wide.webp" alt="" loading="lazy"></picture><span class="pt" lang="fr">Growth &amp; GTM dans une startup d'IA vocale</span><span class="pt" lang="en">Growth &amp; GTM at a voice AI startup</span><span class="pr" lang="fr">Campagnes automatisées, reporting et génération de leads en Europe, au Maghreb et en Afrique</span><span class="pr" lang="en">Automated campaigns, reporting and lead generation across Europe, North Africa and Africa</span><span class="more"><span lang="fr">Voir le projet</span><span lang="en">View project</span> <span aria-hidden="true">&rarr;</span></span></summary>
 <div class="pd">
 <ul lang="fr">
 <li><strong>Campagne LinkedIn pilotée par Claude sur Sales Navigator.</strong> 29 dirigeants CX et opérations dans 20 pays, chaque message rédigé dans la langue de la région du prospect avec une accroche personnalisée. 13,8 % de réponses, 3 rendez-vous programmés, 0 réponse négative.</li>
@@ -180,7 +187,7 @@ h1{max-width:none}
 <li><strong>Voicebot IA de génération de leads.</strong> Refonte en V2 avec un modèle de scoring de performance, mise en ligne sur le site, leads qualifiés routés vers les ventes.</li>
 <li><strong>Leads visiteurs du site.</strong> 34 entreprises analysées et scorées selon l'ICP, les leads chauds transmis aux ventes.</li>
 <li><strong>Délivrabilité email.</strong> Configuration manuelle de SPF, DKIM et DMARC pour protéger la réputation des domaines d'envoi.</li>
-<li><strong>À venir.</strong> Une campagne WhatsApp programmée pour octobre.</li>
+<li><strong>Campagne WhatsApp.</strong> Préparée et programmée pour un lancement en octobre.</li>
 </ul>
 <ul lang="en">
 <li><strong>Claude-powered LinkedIn campaign on Sales Navigator.</strong> 29 senior CX and operations leaders in 20 countries, each message written in the prospect's regional language with a personalised hook. 13.8% reply rate, 3 meetings scheduled, 0 negative replies.</li>
@@ -189,7 +196,7 @@ h1{max-width:none}
 <li><strong>AI voicebot for lead generation.</strong> Rebuilt as V2 with a performance scoring model, live on the website, with qualified leads routed to sales.</li>
 <li><strong>Website visitor leads.</strong> 34 companies scored against the ICP, with warm leads passed to sales.</li>
 <li><strong>Email deliverability.</strong> Set up SPF, DKIM and DMARC by hand to protect the sending domains' reputation.</li>
-<li><strong>Coming next.</strong> A WhatsApp campaign scheduled for October.</li>
+<li><strong>WhatsApp campaign.</strong> Prepared and scheduled for launch in October.</li>
 </ul>
 <div class="gallery"><figure><a href="toumai-salesnav.webp" target="_blank" rel="noopener"><img src="toumai-salesnav.webp" alt="Sales Navigator report" loading="lazy"></a><figcaption><span lang="fr">Rapport Sales Navigator</span><span lang="en">Sales Navigator report</span></figcaption></figure><figure><a href="toumai-lemlist.webp" target="_blank" rel="noopener"><img src="toumai-lemlist.webp" alt="lemlist Spain campaign" loading="lazy"></a><figcaption><span lang="fr">Campagne lemlist Espagne</span><span lang="en">lemlist Spain campaign</span></figcaption></figure><figure><a href="toumai-voicebot.webp" target="_blank" rel="noopener"><img src="toumai-voicebot.webp" alt="AI voicebot flow" loading="lazy"></a><figcaption><span lang="fr">Parcours du voicebot IA</span><span lang="en">AI voicebot flow</span></figcaption></figure><figure><a href="toumai-datastudio.webp" target="_blank" rel="noopener"><img src="toumai-datastudio.webp" alt="Data Studio dashboard" loading="lazy"></a><figcaption><span lang="fr">Tableau de bord Data Studio</span><span lang="en">Data Studio dashboard</span></figcaption></figure></div>
 <div class="tags"><span>Claude</span><span>Sales Navigator</span><span>lemlist</span><span>Data Studio</span><span>GA4</span><span>Folk CRM</span></div>
@@ -308,13 +315,13 @@ h1{max-width:none}
 <section aria-labelledby="exp">
 <h2 id="exp"><span lang="fr">Parcours</span><span lang="en">Experience</span></h2>
 <ul class="tl">
-<li><span class="y"><span lang="fr">Juin à sept. 2026</span><span lang="en">Jun to Sep 2026</span></span><div><div class="r">Growth &amp; GTM Strategy Intern</div><div class="c">ToumAI</div></div></li>
-<li><span class="y">2024 à 2025</span><div><div class="r">Business Development Manager</div><div class="c">Pacific Global Solutions</div></div></li>
-<li><span class="y">2023 à 2024</span><div><div class="r">Assistant Manager, Business Development</div><div class="c">BeFree</div></div></li>
-<li><span class="y">2020 à 2023</span><div><div class="r">Assistant Manager, Business Development</div><div class="c">Datamatics Business Solutions</div></div></li>
-<li><span class="y">2018 à 2019</span><div><div class="r">Sales &amp; Customer Service Executive</div><div class="c" lang="fr">Furtados High Music, vente B2C</div><div class="c" lang="en">Furtados High Music, B2C sales</div></div></li>
-<li><span class="y">2015 à 2017</span><div><div class="r">Lead Generation Associate</div><div class="c">Datamatics</div></div></li>
-<li><span class="y">2012 à 2015</span><div><div class="r">Sales &amp; Customer Care Associate</div><div class="c">Silgate Solutions</div></div></li>
+<li><span class="y"><span lang="fr">Juin à sept. 2026</span><span lang="en">Jun to Sep 2026</span></span><div class="tlw"><img class="tlogo" src="logo-toumai.png" alt=""><div><div class="r">Growth &amp; GTM Strategy Intern</div><div class="c">ToumAI</div></div></div></li>
+<li><span class="y"><span lang="fr">2024 à 2025</span><span lang="en">2024 to 2025</span></span><div class="tlw"><img class="tlogo" src="logo-pacific.png" alt=""><div><div class="r">Business Development Manager</div><div class="c">Pacific Global Solutions</div></div></div></li>
+<li><span class="y"><span lang="fr">2023 à 2024</span><span lang="en">2023 to 2024</span></span><div class="tlw"><img class="tlogo" src="logo-befree.png" alt=""><div><div class="r">Assistant Manager, Business Development</div><div class="c">BeFree</div></div></div></li>
+<li><span class="y"><span lang="fr">2020 à 2023</span><span lang="en">2020 to 2023</span></span><div class="tlw"><img class="tlogo" src="logo-datamatics.png" alt=""><div><div class="r">Assistant Manager, Business Development</div><div class="c">Datamatics Business Solutions</div></div></div></li>
+<li><span class="y"><span lang="fr">2018 à 2019</span><span lang="en">2018 to 2019</span></span><div class="tlw"><img class="tlogo" src="logo-furtados-high.png" alt=""><div><div class="r">Sales &amp; Customer Service Executive</div><div class="c" lang="fr">Furtados High Music, vente B2C</div><div class="c" lang="en">Furtados High Music, B2C sales</div></div></div></li>
+<li><span class="y"><span lang="fr">2015 à 2017</span><span lang="en">2015 to 2017</span></span><div class="tlw"><img class="tlogo" src="logo-datamatics.png" alt=""><div><div class="r">Lead Generation Associate</div><div class="c">Datamatics</div></div></div></li>
+<li><span class="y"><span lang="fr">2012 à 2015</span><span lang="en">2012 to 2015</span></span><div class="tlw"><img class="tlogo" src="logo-silgate.png" alt=""><div><div class="r">Sales &amp; Customer Care Associate</div><div class="c">Silgate Solutions</div></div></div></li>
 </ul>
 </section>
 
