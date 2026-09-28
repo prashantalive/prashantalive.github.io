@@ -108,7 +108,10 @@ h1{max-width:none}
 .cards details:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(23,34,43,.08)}
 .cards summary{display:flex;flex-direction:column;gap:6px;padding:0 0 20px;align-items:stretch}
 .cards .thumb{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top center;border:0;border-bottom:1px solid rgba(23,34,43,.07);border-radius:0;margin-bottom:10px}
-.cards .pt,.cards .pr{padding:0 20px}
+.cards .pt,.cards .pr{padding:0 20px;align-self:stretch;text-align:left}
+.cards details.wide{grid-column:span 2}
+.cards details.wide .thumb{aspect-ratio:32/10}
+.cards picture{display:block}
 .cards .pr{font-size:14.5px}
 .more{padding:6px 20px 0;color:var(--accent);font-weight:600;font-size:14px;margin-top:auto}
 .cards details[open]{grid-column:1/-1}
@@ -124,7 +127,7 @@ h1{max-width:none}
 .pm .pmb{padding:22px 28px 28px}
 .pm .pmb .pd{padding:0;max-width:none}
 @media (max-width:980px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{gap:36px}}
-@media (max-width:760px){.wrap{padding:28px 20px 48px}.hero{grid-template-columns:1fr;margin-bottom:56px}.cards{grid-template-columns:1fr}.cols{grid-template-columns:1fr;gap:8px}.pm .pmh,.pm .pmb{padding-left:18px;padding-right:18px}}
+@media (max-width:760px){.cards details.wide{grid-column:auto}.cards details.wide .thumb{aspect-ratio:16/10}.wrap{padding:28px 20px 48px}.hero{grid-template-columns:1fr;margin-bottom:56px}.cards{grid-template-columns:1fr}.cols{grid-template-columns:1fr;gap:8px}.pm .pmh,.pm .pmb{padding-left:18px;padding-right:18px}}
 </style>
 </head>
 <body>
@@ -167,7 +170,7 @@ h1{max-width:none}
 <h2 id="proj"><span lang="fr">Projets</span><span lang="en">Work</span></h2>
 <div class="cards">
 
-<details>
+<details class="wide">
 <summary><img class="thumb" src="toumai-salesnav.webp" alt="" loading="lazy"><span class="pt" lang="fr">Growth &amp; GTM dans une startup d'IA vocale</span><span class="pt" lang="en">Growth &amp; GTM at a voice AI startup</span><span class="pr" lang="fr">Campagnes automatisées, reporting et génération de leads en Europe, au Maghreb et en Afrique</span><span class="pr" lang="en">Automated campaigns, reporting and lead generation across Europe, North Africa and Africa</span><span class="more"><span lang="fr">Voir le projet</span><span lang="en">View project</span> <span aria-hidden="true">&rarr;</span></span></summary>
 <div class="pd">
 <ul lang="fr">
@@ -230,12 +233,20 @@ h1{max-width:none}
 </details>
 
 <details>
-<summary><img class="thumb" src="https://i.ytimg.com/vi/_jMDunkZh2I/hqdefault.jpg" alt="" loading="lazy"><span class="pt" lang="fr">Vidéo marketing : projet LEX</span><span class="pt" lang="en">Marketing video: LEX project</span><span class="pr" lang="fr">Planifiée, scénarisée, tournée et montée par moi sur CapCut</span><span class="pr" lang="en">Planned, scripted, filmed and edited by me in CapCut</span><span class="more"><span lang="fr">Voir le projet</span><span lang="en">View project</span> <span aria-hidden="true">&rarr;</span></span></summary>
+<summary><img class="thumb" src="lex.webp" alt="" loading="lazy"><span class="pt" lang="fr">Learning Expedition : l'IA dans l'industrie bio</span><span class="pt" lang="en">Learning Expedition: AI in the organic industry</span><span class="pr" lang="fr">Enquête terrain sur l'adoption de l'IA par les entreprises bio et artisanales, et un VLOG</span><span class="pr" lang="en">Field research on AI adoption in organic and artisan businesses, plus a VLOG</span><span class="more"><span lang="fr">Voir le projet</span><span lang="en">View project</span> <span aria-hidden="true">&rarr;</span></span></summary>
 <div class="pd">
-<p lang="fr">Une vidéo de marque réalisée de bout en bout, de l'idée au montage final, pour raconter une histoire et positionner la marque auprès de son audience.</p>
-<p lang="en">A brand video made end to end, from the idea to the final cut, to tell a story and position the brand with its audience.</p>
+<div lang="fr">
+<p><strong>Le contexte.</strong> Projet d'équipe de 4 à Rennes School of Business : comprendre comment les petites entreprises bio et artisanales françaises adoptent l'IA et le digital.</p>
+<p><strong>Mon rôle.</strong> Entretiens au Salon Marjolaine à Paris, direction du VLOG, planification et script de la vidéo, recherche sectorielle, premier jalon du projet et répartition des tâches dans l'équipe.</p>
+<p><strong>Ce que nous avons trouvé.</strong> Sur 10 entretiens approfondis, seules 25 % des entreprises utilisent l'IA pour des tâches avancées (SEO, reporting) et 35 % la rejettent par peur de perdre leur authenticité. L'adoption atteint 70 % chez les jeunes fondateurs, contre 20 % chez les plus âgés. Notre recommandation : un programme progressif d'ateliers et d'essais gratuits plutôt que de gros partenariats technologiques.</p>
+</div>
+<div lang="en">
+<p><strong>Context.</strong> A 4-person team project at Rennes School of Business: understand how small French organic and artisan businesses adopt AI and digital tools.</p>
+<p><strong>My role.</strong> Interviews at Salon Marjolaine in Paris, VLOG direction, video planning and script, industry research, the first project milestone and task delegation within the team.</p>
+<p><strong>What we found.</strong> Across 10 in-depth interviews, only 25% of businesses use AI for advanced tasks (SEO, reporting) and 35% reject it for fear of losing their authenticity. Adoption reaches 70% among young founders, against 20% among older ones. Our recommendation: a gradual programme of workshops and free trials rather than large technology partnerships.</p>
+</div>
 <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/_jMDunkZh2I" title="LEX project video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<div class="tags"><span>Video</span><span>CapCut</span><span>Storytelling</span></div>
+<div class="tags"><span>Field research</span><span>Video direction</span><span>Scriptwriting</span><span>AI adoption</span></div>
 </div>
 </details>
 
@@ -254,6 +265,22 @@ h1{max-width:none}
 </div>
 <div class="gallery"><figure><a href="us-market.webp" target="_blank" rel="noopener"><img src="us-market.webp" alt="US market results" loading="lazy"></a><figcaption><span lang="fr">Résultats marché US</span><span lang="en">US market results</span></figcaption></figure></div>
 <div class="tags"><span>Appointment setting</span><span>Team lead</span><span>Closing</span></div>
+</div>
+</details>
+
+<details class="wide">
+<summary><picture><source media="(max-width:760px)" srcset="tony-map.webp"><img class="thumb" src="tony-wide.webp" alt="" loading="lazy"></picture><span class="pt" lang="fr">Stratégie de marque : Tony's Chocolonely</span><span class="pt" lang="en">Brand strategy: Tony's Chocolonely</span><span class="pr" lang="fr">Positionnement et architecture de marque pour une marque engagée, dans un marché où tout le monde se dit « éthique »</span><span class="pr" lang="en">Positioning and brand architecture for a mission brand, in a market where everyone claims to be "ethical"</span><span class="more"><span lang="fr">Voir le projet</span><span lang="en">View project</span> <span aria-hidden="true">&rarr;</span></span></summary>
+<div class="pd">
+<div lang="fr">
+<p><strong>Le contexte.</strong> Étude de cas individuelle en Brand Management à Rennes School of Business (décembre 2025). Deux questions : comment Tony's peut rester LA marque de chocolat engagée quand tous ses concurrents parlent d'éthique, et comment éviter que sa gamme grandissante ne brouille sa mission.</p>
+<p><strong>Ce que j'ai fait.</strong> Analyse des points de parité et de différence et du modèle CBBE de Keller, puis une carte perceptuelle « impact systémique × fun » qui place Tony's sur le créneau du « fun activist ». Recommandations : une phrase de mission visible sur chaque produit, Open Chain mis en avant comme preuve de leadership, une architecture « branded house » structurée en trois gammes (Mission, Impact Innovation, Partenariats) et un filtre « mission d'abord » pour toute nouvelle référence.</p>
+</div>
+<div lang="en">
+<p><strong>Context.</strong> An individual Brand Management case study at Rennes School of Business (December 2025). Two questions: how Tony's can stay THE mission-driven chocolate brand when every competitor talks ethics, and how to stop its growing range from blurring the mission.</p>
+<p><strong>What I did.</strong> Analysed points of parity and difference with Keller's CBBE model, then built an "impact × fun" perceptual map placing Tony's in the "fun activist" sweet spot. Recommendations: a mission line on every product, Open Chain showcased as proof of leadership, a structured branded house with three ranges (Mission, Impact Innovation, Partnerships) and a "mission first" gate for every new product.</p>
+</div>
+<div class="gallery"><figure><a href="tony-map.webp" target="_blank" rel="noopener"><img src="tony-map.webp" alt="Perceptual map" loading="lazy"></a><figcaption><span lang="fr">Carte perceptuelle</span><span lang="en">Perceptual map</span></figcaption></figure><figure><a href="tony-valuechain.webp" target="_blank" rel="noopener"><img src="tony-valuechain.webp" alt="Cocoa value chain breakdown" loading="lazy"></a><figcaption><span lang="fr">Répartition de la valeur du cacao</span><span lang="en">Cocoa value chain breakdown</span></figcaption></figure></div>
+<div class="tags"><span>Brand positioning</span><span>Brand architecture</span><span>Keller CBBE</span></div>
 </div>
 </details>
 
