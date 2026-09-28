@@ -92,6 +92,39 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 .toggle{background:rgba(255,255,255,.7)}
 @media (max-width:620px){.map{width:900px;top:170px;opacity:.55}.backdrop{height:1100px}}
 @media (prefers-reduced-motion:reduce){.blob,.ring{animation:none}}
+.lb{margin:auto;border:0;padding:0;background:transparent;max-width:96vw;max-height:94vh}.lb::backdrop{background:rgba(15,22,28,.82)}.lb img{display:block;max-width:96vw;max-height:88vh;border-radius:12px}.lb button{position:fixed;top:16px;right:16px;width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:#17222B;font-size:22px;cursor:pointer}.lb p{color:#fff;text-align:center;margin-top:10px;font-size:14px}
+
+.wrap{max-width:1180px;padding:40px 32px 72px}
+.hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:56px;align-items:center;margin-bottom:80px}
+.hero .figures{display:grid;grid-template-columns:1fr;gap:14px;margin:0;padding:0;border:0}
+.hero .fig{background:rgba(255,255,255,.62);border:1px solid rgba(23,34,43,.07);border-radius:18px;padding:22px 24px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.hero .fig span{margin-top:6px}
+h1{max-width:none}
+.cards summary img[src="toumai-salesnav.webp"]{object-position:left top}
+.two.sm p{margin-bottom:8px}
+.contact{border-top:0;background:rgba(255,255,255,.7);border:1px solid rgba(23,34,43,.08);border-radius:22px;padding:36px 40px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:8px}
+.cards details{border:1px solid rgba(23,34,43,.08);border-radius:18px;background:rgba(255,255,255,.72);overflow:hidden;transition:transform .2s,box-shadow .2s}
+.cards details:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(23,34,43,.08)}
+.cards summary{display:flex;flex-direction:column;gap:6px;padding:0 0 20px;align-items:stretch}
+.cards .thumb{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top center;border:0;border-bottom:1px solid rgba(23,34,43,.07);border-radius:0;margin-bottom:10px}
+.cards .pt,.cards .pr{padding:0 20px}
+.cards .pr{font-size:14.5px}
+.more{padding:6px 20px 0;color:var(--accent);font-weight:600;font-size:14px;margin-top:auto}
+.cards details[open]{grid-column:1/-1}
+.cards details[open] .pd{padding:0 24px 24px;max-width:none}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px}
+.col section{margin-bottom:48px}
+.two.sm{gap:24px}
+.pm{margin:auto;border:0;border-radius:20px;padding:0;width:min(960px,94vw);max-height:90vh;background:#fff;color:var(--ink)}
+.pm::backdrop{background:rgba(15,22,28,.6)}
+.pm .pmh{position:sticky;top:0;background:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 28px;border-bottom:1px solid var(--rule);z-index:2}
+.pm .pmh h3{font-family:var(--display);font-size:22px;line-height:1.2}
+.pm .pmh button{flex:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--rule);background:#fff;font-size:20px;cursor:pointer;color:var(--ink)}
+.pm .pmb{padding:22px 28px 28px}
+.pm .pmb .pd{padding:0;max-width:none}
+@media (max-width:980px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{gap:36px}}
+@media (max-width:760px){.wrap{padding:28px 20px 48px}.hero{grid-template-columns:1fr;margin-bottom:56px}.cards{grid-template-columns:1fr}.cols{grid-template-columns:1fr;gap:8px}.pm .pmh,.pm .pmb{padding-left:18px;padding-right:18px}}
 </style>
 </head>
 <body>
@@ -107,6 +140,7 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 </header>
 
 <main>
+<div class="hero"><div class="hero-l">
 <h1 lang="fr">11 ans de croissance B2B et B2C, désormais portée par l'IA.</h1>
 <h1 lang="en">11 years of B2B and B2C growth, now powered by AI.</h1>
 
@@ -119,18 +153,22 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 <span class="avail" lang="fr">Disponible immédiatement. Basé à Paris, ouvert à la relocalisation.</span>
 <span class="avail" lang="en">Available immediately. Based in Paris, open to relocation.</span>
 <div class="btns herobtns"><a class="btn main" href="PS_CV_Public.pdf" download><span lang="fr">Télécharger mon CV (EN)</span><span lang="en">Download my CV</span></a><a class="btn" href="https://www.linkedin.com/in/prashantvsaini/" target="_blank" rel="noopener">LinkedIn</a></div>
-
+</div><div class="hero-r">
 <div class="figures">
 <div class="fig"><b lang="fr">≈ 1 M$</b><b lang="en">≈ $1M</b><span lang="fr">de revenus B2B générés au fil de ma carrière</span><span lang="en">in B2B revenue generated across my career</span></div>
 <div class="fig"><b lang="fr">487 k$</b><b lang="en">$487K</b><span lang="fr">signés en un an sur un nouveau marché, l'Australie</span><span lang="en">closed in one year entering a new market, Australia</span></div>
 <div class="fig"><b lang="fr">110 à 130&nbsp;%</b><b lang="en">110 to 130%</b><span lang="fr">de l'objectif trimestriel atteint en closing</span><span lang="en">of quarterly target reached as a closer</span></div>
 </div>
+</div></div>
+
+
 
 <section aria-labelledby="proj">
 <h2 id="proj"><span lang="fr">Projets</span><span lang="en">Work</span></h2>
+<div class="cards">
 
 <details>
-<summary><img class="thumb" src="toumai-salesnav.webp" alt="" loading="lazy"><span class="pt" lang="fr">Growth &amp; GTM dans une startup d'IA vocale</span><span class="pt" lang="en">Growth &amp; GTM at a voice AI startup</span><span class="pr" lang="fr">Campagnes automatisées, reporting et génération de leads en Europe, au Maghreb et en Afrique</span><span class="pr" lang="en">Automated campaigns, reporting and lead generation across Europe, North Africa and Africa</span><span class="plus" aria-hidden="true">+</span></summary>
+<summary><img class="thumb" src="toumai-salesnav.webp" alt="" loading="lazy"><span class="pt" lang="fr">Growth &amp; GTM dans une startup d'IA vocale</span><span class="pt" lang="en">Growth &amp; GTM at a voice AI startup</span><span class="pr" lang="fr">Campagnes automatisées, reporting et génération de leads en Europe, au Maghreb et en Afrique</span><span class="pr" lang="en">Automated campaigns, reporting and lead generation across Europe, North Africa and Africa</span><span class="more"><span lang="fr">Voir le projet</span><span lang="en">View project</span> <span aria-hidden="true">&rarr;</span></span></summary>
 <div class="pd">
 <ul lang="fr">
 <li><strong>Campagne LinkedIn pilotée par Claude sur Sales Navigator.</strong> 29 dirigeants CX et opérations dans 20 pays, chaque message rédigé dans la langue de la région du prospect avec une accroche personnalisée. 13,8 % de réponses, 3 rendez-vous programmés, 0 réponse négative.</li>
@@ -156,7 +194,7 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 </details>
 
 <details>
-<summary><img class="thumb" src="pabs.webp" alt="" loading="lazy"><span class="pt" lang="fr">Création de PABS Australia, à partir de zéro</span><span class="pt" lang="en">Building PABS Australia from scratch</span><span class="pr" lang="fr">Une nouvelle division de Pacific Global Solutions, 487 k$ signés en un an</span><span class="pr" lang="en">A new Pacific Global Solutions division, 487k$ closed in one year</span><span class="plus" aria-hidden="true">+</span></summary>
+<summary><img class="thumb" src="pabs.webp" alt="" loading="lazy"><span class="pt" lang="fr">Création de PABS Australia, à partir de zéro</span><span class="pt" lang="en">Building PABS Australia from scratch</span><span class="pr" lang="fr">Une nouvelle division de Pacific Global Solutions, 487 k$ signés en un an</span><span class="pr" lang="en">A new Pacific Global Solutions division, 487k$ closed in one year</span><span class="more"><span lang="fr">Voir le projet</span><span lang="en">View project</span> <span aria-hidden="true">&rarr;</span></span></summary>
 <div class="pd">
 <div lang="fr">
 <p><strong>Le contexte.</strong> Lancer une nouvelle division en Australie pour Pacific Global Solutions, sans marque, sans process et sans clients.</p>
@@ -174,7 +212,7 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 </details>
 
 <details>
-<summary><img class="thumb" src="tradeshows.webp" alt="" loading="lazy"><span class="pt" lang="fr">Campagnes avant salon pour 2 salons B2B</span><span class="pt" lang="en">Pre-show campaigns for 2 B2B trade shows</span><span class="pr" lang="fr">Environ 18 rendez-vous sur stand obtenus avant l'ouverture des portes</span><span class="pr" lang="en">About 18 stand meetings booked before the doors opened</span><span class="plus" aria-hidden="true">+</span></summary>
+<summary><img class="thumb" src="tradeshows.webp" alt="" loading="lazy"><span class="pt" lang="fr">Campagnes avant salon pour 2 salons B2B</span><span class="pt" lang="en">Pre-show campaigns for 2 B2B trade shows</span><span class="pr" lang="fr">Environ 18 rendez-vous sur stand obtenus avant l'ouverture des portes</span><span class="pr" lang="en">About 18 stand meetings booked before the doors opened</span><span class="more"><span lang="fr">Voir le projet</span><span lang="en">View project</span> <span aria-hidden="true">&rarr;</span></span></summary>
 <div class="pd">
 <div lang="fr">
 <p><strong>Le contexte.</strong> The Franchise Event pour BeFree et Accountex pour Pacific Global Solutions, deux salons où l'on vendait des services comptables et financiers externalisés aux franchisés et aux opérateurs multi-sites. Accountex London 2025 a réuni plus de 16 000 visiteurs et plus de 300 exposants.</p>
@@ -192,7 +230,7 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 </details>
 
 <details>
-<summary><img class="thumb" src="https://i.ytimg.com/vi/_jMDunkZh2I/hqdefault.jpg" alt="" loading="lazy"><span class="pt" lang="fr">Vidéo marketing : projet LEX</span><span class="pt" lang="en">Marketing video: LEX project</span><span class="pr" lang="fr">Planifiée, scénarisée, tournée et montée par moi sur CapCut</span><span class="pr" lang="en">Planned, scripted, filmed and edited by me in CapCut</span><span class="plus" aria-hidden="true">+</span></summary>
+<summary><img class="thumb" src="https://i.ytimg.com/vi/_jMDunkZh2I/hqdefault.jpg" alt="" loading="lazy"><span class="pt" lang="fr">Vidéo marketing : projet LEX</span><span class="pt" lang="en">Marketing video: LEX project</span><span class="pr" lang="fr">Planifiée, scénarisée, tournée et montée par moi sur CapCut</span><span class="pr" lang="en">Planned, scripted, filmed and edited by me in CapCut</span><span class="more"><span lang="fr">Voir le projet</span><span lang="en">View project</span> <span aria-hidden="true">&rarr;</span></span></summary>
 <div class="pd">
 <p lang="fr">Une vidéo de marque réalisée de bout en bout, de l'idée au montage final, pour raconter une histoire et positionner la marque auprès de son audience.</p>
 <p lang="en">A brand video made end to end, from the idea to the final cut, to tell a story and position the brand with its audience.</p>
@@ -202,7 +240,7 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 </details>
 
 <details>
-<summary><img class="thumb" src="us-market.webp" alt="" loading="lazy"><span class="pt" lang="fr">Du rendez-vous qualifié au closing, marché US</span><span class="pt" lang="en">From qualified meetings to closing, US market</span><span class="pr" lang="fr">Une équipe de 10 en pre-sales, puis 380 k$ signés en closing</span><span class="pr" lang="en">A 10-person pre-sales team, then 380k$ closed personally</span><span class="plus" aria-hidden="true">+</span></summary>
+<summary><img class="thumb" src="us-market.webp" alt="" loading="lazy"><span class="pt" lang="fr">Du rendez-vous qualifié au closing, marché US</span><span class="pt" lang="en">From qualified meetings to closing, US market</span><span class="pr" lang="fr">Une équipe de 10 en pre-sales, puis 380 k$ signés en closing</span><span class="pr" lang="en">A 10-person pre-sales team, then 380k$ closed personally</span><span class="more"><span lang="fr">Voir le projet</span><span lang="en">View project</span> <span aria-hidden="true">&rarr;</span></span></summary>
 <div class="pd">
 <div lang="fr">
 <p><strong>Le contexte.</strong> Datamatics Business Solutions, avec des clients aux États-Unis, en Europe, au Moyen-Orient et en Inde.</p>
@@ -220,7 +258,7 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 </details>
 
 <details>
-<summary><img class="thumb" src="meta-carousel.webp" alt="" loading="lazy"><span class="pt" lang="fr">Cas pratique Meta Ads : conciergerie Airbnb en Savoie</span><span class="pt" lang="en">Meta Ads case study: Airbnb property manager in Savoie</span><span class="pr" lang="fr">2 publicités et une configuration complète pour générer des rendez-vous propriétaires</span><span class="pr" lang="en">2 ads and a full setup to book meetings with property owners</span><span class="plus" aria-hidden="true">+</span></summary>
+<summary><img class="thumb" src="meta-carousel.webp" alt="" loading="lazy"><span class="pt" lang="fr">Cas pratique Meta Ads : conciergerie Airbnb en Savoie</span><span class="pt" lang="en">Meta Ads case study: Airbnb property manager in Savoie</span><span class="pr" lang="fr">2 publicités et une configuration complète pour générer des rendez-vous propriétaires</span><span class="pr" lang="en">2 ads and a full setup to book meetings with property owners</span><span class="more"><span lang="fr">Voir le projet</span><span lang="en">View project</span> <span aria-hidden="true">&rarr;</span></span></summary>
 <div class="pd">
 <div lang="fr">
 <p><strong>Le contexte.</strong> Un test d'entretien pour une agence de génération de leads, sur le brief d'un vrai client : trouver des propriétaires prêts à confier leur bien en location courte durée.</p>
@@ -236,8 +274,10 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 <div class="tags"><span>Meta Ads</span><span>Lead gen</span><span>Creative strategy</span></div>
 </div>
 </details>
+</div>
 </section>
 
+<div class="cols"><div class="col">
 <section aria-labelledby="exp">
 <h2 id="exp"><span lang="fr">Parcours</span><span lang="en">Experience</span></h2>
 <ul class="tl">
@@ -251,6 +291,15 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 </ul>
 </section>
 
+<section aria-labelledby="dist" class="list">
+<h2 id="dist"><span lang="fr">Distinctions</span><span lang="en">Recognition</span></h2>
+<p lang="fr">Top Consistent Performer, Datamatics Annual Merit Award (2017)</p>
+<p lang="en">Top Consistent Performer, Datamatics Annual Merit Award (2017)</p>
+<p lang="fr">Record de l'entreprise : 30 ventes conclues en une journée, Silgate Solutions</p>
+<p lang="en">Company record: 30 sales closed in a single day, Silgate Solutions</p>
+</section>
+
+</div><div class="col">
 <section aria-labelledby="edu">
 <h2 id="edu"><span lang="fr">Formation</span><span lang="en">Education</span></h2>
 <div class="edu">
@@ -261,7 +310,7 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 <div class="edu"><p class="r">Bachelor of Commerce (Three Year Degree Course), Mumbai University (2015)</p><p lang="fr">Spécialisation : Financial Accounting and Auditing</p><p lang="en">Specialisation: Financial Accounting and Auditing</p></div>
 </section>
 
-<section class="two">
+<section class="two sm">
 <div>
 <h2>Certifications</h2>
 <p>Google Ads, AI-Powered Performance Ads (2025)</p>
@@ -275,14 +324,6 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 </div>
 </section>
 
-<section aria-labelledby="dist" class="list">
-<h2 id="dist"><span lang="fr">Distinctions</span><span lang="en">Recognition</span></h2>
-<p lang="fr">Top Consistent Performer, Datamatics Annual Merit Award (2017)</p>
-<p lang="en">Top Consistent Performer, Datamatics Annual Merit Award (2017)</p>
-<p lang="fr">Record de l'entreprise : 30 ventes conclues en une journée, Silgate Solutions</p>
-<p lang="en">Company record: 30 sales closed in a single day, Silgate Solutions</p>
-</section>
-
 <section aria-labelledby="out" class="list">
 <h2 id="out"><span lang="fr">En dehors du travail</span><span lang="en">Outside work</span></h2>
 <p lang="fr">Tir à l'arc en compétition : 6e au championnat de Mumbai, puis sélectionné pour concourir au niveau de l'État.</p>
@@ -290,6 +331,8 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 <p lang="en">Competitive archery: ranked 6th in the Mumbai championship, then went on to compete at state level.</p>
 <p lang="en">Pop blues music, adventure sports and mixed martial arts. I film my travels and food finds as short videos on <a href="https://www.youtube.com/@acousticlife4me/shorts" target="_blank" rel="noopener">my YouTube channel</a>.</p>
 </section>
+
+</div></div>
 
 <section class="contact" aria-labelledby="ct">
 <h2 id="ct"><span lang="fr">Parlons de votre croissance</span><span lang="en">Let's talk about your growth</span></h2>
@@ -305,7 +348,15 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
 
 <footer>Prashant Saini, Paris</footer>
 </div>
+<dialog class="pm" id="pm"><div class="pmh"><h3></h3><button type="button" aria-label="Fermer / Close">&times;</button></div><div class="pmb"></div></dialog>
+<dialog class="lb" id="lb"><button type="button" aria-label="Fermer / Close">&times;</button><img alt=""><p></p></dialog>
 <script>
+(function(){var lb=document.getElementById("lb"),pm=document.getElementById("pm");if(!lb||!lb.showModal)return;
+function lang(){return document.documentElement.getAttribute("data-lang")||"fr"}
+document.addEventListener("click",function(e){var a=e.target.closest(".gallery a");if(!a)return;e.preventDefault();var i=a.querySelector("img");lb.querySelector("img").src=a.getAttribute("href");lb.querySelector("img").alt=i.alt;var c=a.parentNode.querySelector('figcaption [lang="'+lang()+'"]');lb.querySelector("p").textContent=c?c.textContent:"";lb.showModal();});
+lb.addEventListener("click",function(e){if(e.target===lb||e.target.tagName==="BUTTON")lb.close();});
+document.querySelectorAll(".cards details").forEach(function(d){d.querySelector("summary").addEventListener("click",function(e){e.preventDefault();var t=d.querySelector('.pt[lang="'+lang()+'"]');pm.querySelector("h3").innerHTML=t?t.innerHTML:"";var b=pm.querySelector(".pmb");b.innerHTML="";b.appendChild(d.querySelector(".pd").cloneNode(true));pm.showModal();pm.scrollTop=0;});});
+pm.addEventListener("click",function(e){if(e.target===pm||e.target.closest(".pmh button"))pm.close();});})();
 (function(){
   var root=document.documentElement, btns=document.querySelectorAll('.toggle button');
   function set(l){root.setAttribute('data-lang',l);root.setAttribute('lang',l);btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===l?'true':'false')});}
